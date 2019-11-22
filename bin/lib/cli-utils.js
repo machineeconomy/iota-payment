@@ -5,11 +5,13 @@ const { URL } = require('url')
 module.exports.loadConfig = loadConfig
 
 function loadConfig(program, options) {
+    console.log('loadConfig')
     let argv = {
         ...options,
         version: program.version()
     }
     let configFile = argv['configFile'] || './config.json'
+    console.log('configFile', configFile)
 
     try {
         const file = fs.readFileSync(configFile)
@@ -17,6 +19,7 @@ function loadConfig(program, options) {
         // Use flags with priority over config file
         const config = JSON.parse(file)
         argv = { ...config, ...argv }
+        console.log('argv', argv)
     } catch (err) {
         // If config file was specified, but it doesn't exist, stop with error message
         if (typeof argv['configFile'] !== 'undefined') {

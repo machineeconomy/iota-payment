@@ -7,6 +7,8 @@ const { loadConfig } = require('./cli-utils')
 const { red, bold } = require('colorette')
 
 module.exports = function (program, server) {
+  console.log('Booting iota-payment server server...')
+  console.log('server', server)
   const start = program
     .command('start')
     .description('run the iota-payment server')
@@ -72,7 +74,7 @@ function bin(argv, server) {
     })
   }
 
-  // // Finally starting iotap
+  // Finally starting iotap
   const iotap = require('../../')
   let app
   const options = {

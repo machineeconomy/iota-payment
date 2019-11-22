@@ -11,6 +11,14 @@ module.exports = [
   //   help: 'Print the logs to console\n'
   // },
   {
+    name: 'mount',
+    help: "Serve on a specific URL path (default: '/iotapay')",
+    question: 'Serve Iotapay on URL path',
+    default: '/iotapay',
+    prompt: true
+  },
+  /*
+  {
     name: 'root',
     help: "Root folder to serve (default: './data')",
     question: 'Path to the folder you want to serve. Default is',
@@ -375,6 +383,8 @@ module.exports = [
     },
     when: answers => answers.multiuser
   }
+
+  */
 ]
 
 function validPath(value) {

@@ -5,6 +5,7 @@ const { spawnSync } = require('child_process')
 const path = require('path')
 
 module.exports = function startCli(server) {
+  console.log('startCli::server', server)
   program.version(getVersion())
 
   loadInit(program)
