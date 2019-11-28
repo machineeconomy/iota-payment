@@ -1,19 +1,13 @@
 # iota payment module
+The module brings an IOTA Wallet and handles everything to send or receive IOTA Payments in Javascripts apps.
 
-## Module Features supported
+The IOTA payment module can be run as a server in the standalone mode or included in any js code as a library.
 
-- [x] [Provide Enpoints for Payments]()
-- [x] [Generates save IOTA addresses]()
-- [ ] [Check incomming transactions on ZMQ stream](https://github.com/machineeconomy/iota-payment/issues/6)
-- [x] [Check transaction status (confirmed or not) ]()
-- [x] [JS Event handler]()
-- [x] [Payout functionality]()
-- [x] [Auto payment cleanup](https://github.com/machineeconomy/iota-payment/issues/18)
-- [ ] [MQTT Events](https://github.com/machineeconomy/iota-payment/issues/7)
+This module also brings an admin dashboard, to managa all payments and payouts and see the status off the wallet.
 
 ## How to Use
 
-**Still in development and testing. Unexpected errors and loss of funds may occur. Feedback is welcome!**
+**Still in development and testing. Unexpected errors and loss of funds may occur. So please use the IOTA Devnet for testing. Feedback is welcome!**
 
 This module can easily extend your nodejs or express app.
 
@@ -68,6 +62,17 @@ server.listen(3000, function () {
 - [04_payment](./examples/04_payment.js)
 - [05_payout](./examples/05_payout.js)
 - [06_websockets](./examples/06_websockets.js)
+
+## Module Features supported
+
+- [x] [Provide Enpoints for Payments]()
+- [x] [Generates save IOTA addresses]()
+- [x] [Check incomming transactions on ZMQ stream](https://github.com/machineeconomy/iota-payment/issues/6)
+- [x] [Check transaction status (confirmed or not) ]()
+- [x] [JS Event handler]()
+- [x] [Payout functionality]()
+- [x] [Auto payment cleanup](https://github.com/machineeconomy/iota-payment/issues/18)
+- [ ] [MQTT Events](https://github.com/machineeconomy/iota-payment/issues/7)
 
 ## Contribute
 
