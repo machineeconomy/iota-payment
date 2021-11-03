@@ -35,7 +35,7 @@
     "request": "^2.88.0",
     "socket.io": "^2.3.0",
     "valid-url": "^1.0.9",
-    "validator": "^12.0.0",
+    "validator": "^13.7.0",
     "zeromq": "^5.1.0"
   },
   "devDependencies": {
